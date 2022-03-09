@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1475CF6627D64F91001489A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1475CF6527D64F91001489A9 /* GoogleService-Info.plist */; };
+		147E01DA27C125F000EF2792 /* MINTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E01D927C125F000EF2792 /* MINTAApp.swift */; };
+		147E01DE27C125F100EF2792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147E01DD27C125F100EF2792 /* Assets.xcassets */; };
+		147E01E127C125F100EF2792 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147E01E027C125F100EF2792 /* Preview Assets.xcassets */; };
+		147E01ED27C1570000EF2792 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E01EC27C1570000EF2792 /* NavigationBarView.swift */; };
+		147E01EF27C1574C00EF2792 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E01EE27C1574C00EF2792 /* GlobalHelpers.swift */; };
+		147E01F127C1589C00EF2792 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E01F027C1589C00EF2792 /* CameraService.swift */; };
+		147E01F327C158D100EF2792 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E01F227C158D100EF2792 /* CameraView.swift */; };
+		147E01F527C158F200EF2792 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E01F427C158F200EF2792 /* ViewRouter.swift */; };
+		147E01F727C15A2B00EF2792 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E01F627C15A2B00EF2792 /* MainView.swift */; };
+		147E01F927C15AB200EF2792 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E01F827C15AB200EF2792 /* CustomTabBarView.swift */; };
+		147E01FB27C15AEC00EF2792 /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E01FA27C15AEC00EF2792 /* TabBarItemView.swift */; };
+		1483F67427C7732100AC7DD5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1483F67327C7732100AC7DD5 /* Launch Screen.storyboard */; };
+		1483F67627C775C100AC7DD5 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483F67527C775C100AC7DD5 /* SpinnerView.swift */; };
+		1483F67827C7850A00AC7DD5 /* MintItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483F67727C7850A00AC7DD5 /* MintItemView.swift */; };
+		1483F67A27C7F6F100AC7DD5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483F67927C7F6F100AC7DD5 /* LoginView.swift */; };
+		1483F67D27C7F7E300AC7DD5 /* OpenLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 1483F67C27C7F7E300AC7DD5 /* OpenLogin */; };
+		148700C527C3FF9C0020EFE5 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700C427C3FF9C0020EFE5 /* CustomCameraView.swift */; };
+		148700C727C427300020EFE5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700C627C427300020EFE5 /* HomeView.swift */; };
+		148700C927C4273D0020EFE5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700C827C4273D0020EFE5 /* ProfileView.swift */; };
+		148700CB27C436BA0020EFE5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700CA27C436BA0020EFE5 /* ProfileHeaderView.swift */; };
+		148700CD27C6C2130020EFE5 /* MintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700CC27C6C2130020EFE5 /* MintView.swift */; };
+		4731DDFA27D8976E00B67A3F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4731DDF927D8976E00B67A3F /* FirebaseAuth */; };
+		5EFD023C76FCBC11B998052C /* Pods_MINTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080EC996D1A19D10CB1F6A22 /* Pods_MINTA.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		080EC996D1A19D10CB1F6A22 /* Pods_MINTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1284A81514C00D157C49B7BA /* Pods-MINTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINTA.release.xcconfig"; path = "Target Support Files/Pods-MINTA/Pods-MINTA.release.xcconfig"; sourceTree = "<group>"; };
+		1475CF6527D64F91001489A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1475CF6727D659BE001489A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		147E01D627C125F000EF2792 /* MINTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MINTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		147E01D927C125F000EF2792 /* MINTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MINTAApp.swift; sourceTree = "<group>"; };
+		147E01DD27C125F100EF2792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		147E01E027C125F100EF2792 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		147E01EC27C1570000EF2792 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		147E01EE27C1574C00EF2792 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		147E01F027C1589C00EF2792 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		147E01F227C158D100EF2792 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		147E01F427C158F200EF2792 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		147E01F627C15A2B00EF2792 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		147E01F827C15AB200EF2792 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		147E01FA27C15AEC00EF2792 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
+		1483F67327C7732100AC7DD5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1483F67527C775C100AC7DD5 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		1483F67727C7850A00AC7DD5 /* MintItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintItemView.swift; sourceTree = "<group>"; };
+		1483F67927C7F6F100AC7DD5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		148700C427C3FF9C0020EFE5 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
+		148700C627C427300020EFE5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		148700C827C4273D0020EFE5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		148700CA27C436BA0020EFE5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		148700CC27C6C2130020EFE5 /* MintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintView.swift; sourceTree = "<group>"; };
+		DAFA833D3485CA79E90E8497 /* Pods-MINTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINTA.debug.xcconfig"; path = "Target Support Files/Pods-MINTA/Pods-MINTA.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		147E01D327C125F000EF2792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1483F67D27C7F7E300AC7DD5 /* OpenLogin in Frameworks */,
+				4731DDFA27D8976E00B67A3F /* FirebaseAuth in Frameworks */,
+				5EFD023C76FCBC11B998052C /* Pods_MINTA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		147E01CD27C125F000EF2792 = {
+			isa = PBXGroup;
+			children = (
+				1475CF6527D64F91001489A9 /* GoogleService-Info.plist */,
+				147E01D827C125F000EF2792 /* MINTA */,
+				147E01D727C125F000EF2792 /* Products */,
+				8FA96E64B06B395639B7031B /* Pods */,
+				F557EA00B92D5091A26E3113 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		147E01D727C125F000EF2792 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				147E01D627C125F000EF2792 /* MINTA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		147E01D827C125F000EF2792 /* MINTA */ = {
+			isa = PBXGroup;
+			children = (
+				1475CF6727D659BE001489A9 /* Info.plist */,
+				147E01EA27C12B6800EF2792 /* Extensions */,
+				147E01E927C12B6200EF2792 /* View */,
+				147E01E827C12B5C00EF2792 /* App */,
+				147E01E727C12B5100EF2792 /* Helper */,
+				147E01D927C125F000EF2792 /* MINTAApp.swift */,
+				147E01DD27C125F100EF2792 /* Assets.xcassets */,
+				147E01DF27C125F100EF2792 /* Preview Content */,
+			);
+			path = MINTA;
+			sourceTree = "<group>";
+		};
+		147E01DF27C125F100EF2792 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				147E01E027C125F100EF2792 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		147E01E727C12B5100EF2792 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				147E01EE27C1574C00EF2792 /* GlobalHelpers.swift */,
+				147E01F427C158F200EF2792 /* ViewRouter.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		147E01E827C12B5C00EF2792 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				147E01F627C15A2B00EF2792 /* MainView.swift */,
+				148700C427C3FF9C0020EFE5 /* CustomCameraView.swift */,
+				148700C627C427300020EFE5 /* HomeView.swift */,
+				148700C827C4273D0020EFE5 /* ProfileView.swift */,
+				148700CC27C6C2130020EFE5 /* MintView.swift */,
+				1483F67927C7F6F100AC7DD5 /* LoginView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		147E01E927C12B6200EF2792 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				147E01EC27C1570000EF2792 /* NavigationBarView.swift */,
+				147E01F827C15AB200EF2792 /* CustomTabBarView.swift */,
+				147E01FA27C15AEC00EF2792 /* TabBarItemView.swift */,
+				148700CA27C436BA0020EFE5 /* ProfileHeaderView.swift */,
+				1483F67327C7732100AC7DD5 /* Launch Screen.storyboard */,
+				1483F67527C775C100AC7DD5 /* SpinnerView.swift */,
+				1483F67727C7850A00AC7DD5 /* MintItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		147E01EA27C12B6800EF2792 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				147E01EB27C12BBD00EF2792 /* Camera */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		147E01EB27C12BBD00EF2792 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				147E01F027C1589C00EF2792 /* CameraService.swift */,
+				147E01F227C158D100EF2792 /* CameraView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		8FA96E64B06B395639B7031B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAFA833D3485CA79E90E8497 /* Pods-MINTA.debug.xcconfig */,
+				1284A81514C00D157C49B7BA /* Pods-MINTA.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F557EA00B92D5091A26E3113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				080EC996D1A19D10CB1F6A22 /* Pods_MINTA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		147E01D527C125F000EF2792 /* MINTA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147E01E427C125F100EF2792 /* Build configuration list for PBXNativeTarget "MINTA" */;
+			buildPhases = (
+				E1F765A42654D9C9FACDA86B /* [CP] Check Pods Manifest.lock */,
+				147E01D227C125F000EF2792 /* Sources */,
+				147E01D327C125F000EF2792 /* Frameworks */,
+				147E01D427C125F000EF2792 /* Resources */,
+				767A35760D212BAB65445B5F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MINTA;
+			packageProductDependencies = (
+				1483F67C27C7F7E300AC7DD5 /* OpenLogin */,
+				4731DDF927D8976E00B67A3F /* FirebaseAuth */,
+			);
+			productName = MINTA;
+			productReference = 147E01D627C125F000EF2792 /* MINTA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		147E01CE27C125F000EF2792 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					147E01D527C125F000EF2792 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 147E01D127C125F000EF2792 /* Build configuration list for PBXProject "MINTA" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 147E01CD27C125F000EF2792;
+			packageReferences = (
+				1483F67B27C7F7E300AC7DD5 /* XCRemoteSwiftPackageReference "openlogin-swift-sdk" */,
+				4731DDF827D8976E00B67A3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
+			);
+			productRefGroup = 147E01D727C125F000EF2792 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				147E01D527C125F000EF2792 /* MINTA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		147E01D427C125F000EF2792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1483F67427C7732100AC7DD5 /* Launch Screen.storyboard in Resources */,
+				147E01E127C125F100EF2792 /* Preview Assets.xcassets in Resources */,
+				147E01DE27C125F100EF2792 /* Assets.xcassets in Resources */,
+				1475CF6627D64F91001489A9 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		767A35760D212BAB65445B5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MINTA/Pods-MINTA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MINTA/Pods-MINTA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MINTA/Pods-MINTA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F765A42654D9C9FACDA86B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MINTA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		147E01D227C125F000EF2792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148700CD27C6C2130020EFE5 /* MintView.swift in Sources */,
+				1483F67627C775C100AC7DD5 /* SpinnerView.swift in Sources */,
+				147E01F127C1589C00EF2792 /* CameraService.swift in Sources */,
+				147E01F727C15A2B00EF2792 /* MainView.swift in Sources */,
+				148700C527C3FF9C0020EFE5 /* CustomCameraView.swift in Sources */,
+				147E01F527C158F200EF2792 /* ViewRouter.swift in Sources */,
+				148700C927C4273D0020EFE5 /* ProfileView.swift in Sources */,
+				147E01F927C15AB200EF2792 /* CustomTabBarView.swift in Sources */,
+				148700CB27C436BA0020EFE5 /* ProfileHeaderView.swift in Sources */,
+				148700C727C427300020EFE5 /* HomeView.swift in Sources */,
+				1483F67A27C7F6F100AC7DD5 /* LoginView.swift in Sources */,
+				147E01DA27C125F000EF2792 /* MINTAApp.swift in Sources */,
+				147E01FB27C15AEC00EF2792 /* TabBarItemView.swift in Sources */,
+				147E01F327C158D100EF2792 /* CameraView.swift in Sources */,
+				147E01EF27C1574C00EF2792 /* GlobalHelpers.swift in Sources */,
+				147E01ED27C1570000EF2792 /* NavigationBarView.swift in Sources */,
+				1483F67827C7850A00AC7DD5 /* MintItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		147E01E227C125F100EF2792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		147E01E327C125F100EF2792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		147E01E527C125F100EF2792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAFA833D3485CA79E90E8497 /* Pods-MINTA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MINTA/Preview Content\"";
+				DEVELOPMENT_TEAM = F79L8XJ8V6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MINTA/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need access to camera to MINT";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minta.minta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		147E01E627C125F100EF2792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1284A81514C00D157C49B7BA /* Pods-MINTA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MINTA/Preview Content\"";
+				DEVELOPMENT_TEAM = F79L8XJ8V6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MINTA/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need access to camera to MINT";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minta.minta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		147E01D127C125F000EF2792 /* Build configuration list for PBXProject "MINTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147E01E227C125F100EF2792 /* Debug */,
+				147E01E327C125F100EF2792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147E01E427C125F100EF2792 /* Build configuration list for PBXNativeTarget "MINTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147E01E527C125F100EF2792 /* Debug */,
+				147E01E627C125F100EF2792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1483F67B27C7F7E300AC7DD5 /* XCRemoteSwiftPackageReference "openlogin-swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/torusresearch/openlogin-swift-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		4731DDF827D8976E00B67A3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1483F67C27C7F7E300AC7DD5 /* OpenLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1483F67B27C7F7E300AC7DD5 /* XCRemoteSwiftPackageReference "openlogin-swift-sdk" */;
+			productName = OpenLogin;
+		};
+		4731DDF927D8976E00B67A3F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4731DDF827D8976E00B67A3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 147E01CE27C125F000EF2792 /* Project object */;
+}
