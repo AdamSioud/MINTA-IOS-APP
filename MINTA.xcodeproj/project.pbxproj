@@ -23,13 +23,11 @@
 		1483F67627C775C100AC7DD5 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483F67527C775C100AC7DD5 /* SpinnerView.swift */; };
 		1483F67827C7850A00AC7DD5 /* MintItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483F67727C7850A00AC7DD5 /* MintItemView.swift */; };
 		1483F67A27C7F6F100AC7DD5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483F67927C7F6F100AC7DD5 /* LoginView.swift */; };
-		1483F67D27C7F7E300AC7DD5 /* OpenLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 1483F67C27C7F7E300AC7DD5 /* OpenLogin */; };
 		148700C527C3FF9C0020EFE5 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700C427C3FF9C0020EFE5 /* CustomCameraView.swift */; };
 		148700C727C427300020EFE5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700C627C427300020EFE5 /* HomeView.swift */; };
 		148700C927C4273D0020EFE5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700C827C4273D0020EFE5 /* ProfileView.swift */; };
 		148700CB27C436BA0020EFE5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700CA27C436BA0020EFE5 /* ProfileHeaderView.swift */; };
 		148700CD27C6C2130020EFE5 /* MintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700CC27C6C2130020EFE5 /* MintView.swift */; };
-		4731DDFA27D8976E00B67A3F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4731DDF927D8976E00B67A3F /* FirebaseAuth */; };
 		5EFD023C76FCBC11B998052C /* Pods_MINTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080EC996D1A19D10CB1F6A22 /* Pods_MINTA.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,8 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1483F67D27C7F7E300AC7DD5 /* OpenLogin in Frameworks */,
-				4731DDFA27D8976E00B67A3F /* FirebaseAuth in Frameworks */,
 				5EFD023C76FCBC11B998052C /* Pods_MINTA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,8 +203,6 @@
 			);
 			name = MINTA;
 			packageProductDependencies = (
-				1483F67C27C7F7E300AC7DD5 /* OpenLogin */,
-				4731DDF927D8976E00B67A3F /* FirebaseAuth */,
 			);
 			productName = MINTA;
 			productReference = 147E01D627C125F000EF2792 /* MINTA.app */;
@@ -240,7 +234,7 @@
 			mainGroup = 147E01CD27C125F000EF2792;
 			packageReferences = (
 				1483F67B27C7F7E300AC7DD5 /* XCRemoteSwiftPackageReference "openlogin-swift-sdk" */,
-				4731DDF827D8976E00B67A3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
+				4731DDF827D8976E00B67A3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 147E01D727C125F000EF2792 /* Products */;
 			projectDirPath = "";
@@ -551,7 +545,7 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		4731DDF827D8976E00B67A3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
+		4731DDF827D8976E00B67A3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -560,19 +554,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1483F67C27C7F7E300AC7DD5 /* OpenLogin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1483F67B27C7F7E300AC7DD5 /* XCRemoteSwiftPackageReference "openlogin-swift-sdk" */;
-			productName = OpenLogin;
-		};
-		4731DDF927D8976E00B67A3F /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4731DDF827D8976E00B67A3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
-			productName = FirebaseAuth;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 147E01CE27C125F000EF2792 /* Project object */;
 }
