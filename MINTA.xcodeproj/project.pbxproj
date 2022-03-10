@@ -57,6 +57,7 @@
 		148700C827C4273D0020EFE5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		148700CA27C436BA0020EFE5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		148700CC27C6C2130020EFE5 /* MintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintView.swift; sourceTree = "<group>"; };
+		47F80AEA27DA2F5D00F0682A /* catalog.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = catalog.md; sourceTree = "<group>"; };
 		DAFA833D3485CA79E90E8497 /* Pods-MINTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINTA.debug.xcconfig"; path = "Target Support Files/Pods-MINTA/Pods-MINTA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +76,7 @@
 		147E01CD27C125F000EF2792 = {
 			isa = PBXGroup;
 			children = (
+				47F80AEA27DA2F5D00F0682A /* catalog.md */,
 				1475CF6527D64F91001489A9 /* GoogleService-Info.plist */,
 				147E01D827C125F000EF2792 /* MINTA */,
 				147E01D727C125F000EF2792 /* Products */,
