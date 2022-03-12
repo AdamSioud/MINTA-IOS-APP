@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		106A3E6F4950A953153F6FA3 /* Pods_MINTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C1FD0BE93025252AB6579C /* Pods_MINTA.framework */; };
 		1475CF6627D64F91001489A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1475CF6527D64F91001489A9 /* GoogleService-Info.plist */; };
 		147E01DA27C125F000EF2792 /* MINTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E01D927C125F000EF2792 /* MINTAApp.swift */; };
 		147E01DE27C125F100EF2792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147E01DD27C125F100EF2792 /* Assets.xcassets */; };
@@ -28,12 +29,13 @@
 		148700C927C4273D0020EFE5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700C827C4273D0020EFE5 /* ProfileView.swift */; };
 		148700CB27C436BA0020EFE5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700CA27C436BA0020EFE5 /* ProfileHeaderView.swift */; };
 		148700CD27C6C2130020EFE5 /* MintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148700CC27C6C2130020EFE5 /* MintView.swift */; };
-		5EFD023C76FCBC11B998052C /* Pods_MINTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080EC996D1A19D10CB1F6A22 /* Pods_MINTA.framework */; };
+		4790063527DB74F300C99D34 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4790063427DB74F300C99D34 /* Kingfisher */; };
+		47AB93A027DBEFD9004F18F0 /* PokemonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB939F27DBEFD9004F18F0 /* PokemonImage.swift */; };
+		47AB93A227DBF531004F18F0 /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB93A127DBF531004F18F0 /* StatView.swift */; };
+		47AB93A427DBF781004F18F0 /* StatsViewGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB93A327DBF781004F18F0 /* StatsViewGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		080EC996D1A19D10CB1F6A22 /* Pods_MINTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1284A81514C00D157C49B7BA /* Pods-MINTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINTA.release.xcconfig"; path = "Target Support Files/Pods-MINTA/Pods-MINTA.release.xcconfig"; sourceTree = "<group>"; };
 		1475CF6527D64F91001489A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1475CF6727D659BE001489A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		147E01D627C125F000EF2792 /* MINTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MINTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,8 +59,13 @@
 		148700C827C4273D0020EFE5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		148700CA27C436BA0020EFE5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		148700CC27C6C2130020EFE5 /* MintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintView.swift; sourceTree = "<group>"; };
+		21457B22F0553F2E34052739 /* Pods-MINTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINTA.release.xcconfig"; path = "Target Support Files/Pods-MINTA/Pods-MINTA.release.xcconfig"; sourceTree = "<group>"; };
+		40C1FD0BE93025252AB6579C /* Pods_MINTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47AB939F27DBEFD9004F18F0 /* PokemonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImage.swift; sourceTree = "<group>"; };
+		47AB93A127DBF531004F18F0 /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
+		47AB93A327DBF781004F18F0 /* StatsViewGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewGroup.swift; sourceTree = "<group>"; };
 		47F80AEA27DA2F5D00F0682A /* catalog.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = catalog.md; sourceTree = "<group>"; };
-		DAFA833D3485CA79E90E8497 /* Pods-MINTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINTA.debug.xcconfig"; path = "Target Support Files/Pods-MINTA/Pods-MINTA.debug.xcconfig"; sourceTree = "<group>"; };
+		8D1B7B7608C5790A79475BF6 /* Pods-MINTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINTA.debug.xcconfig"; path = "Target Support Files/Pods-MINTA/Pods-MINTA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EFD023C76FCBC11B998052C /* Pods_MINTA.framework in Frameworks */,
+				4790063527DB74F300C99D34 /* Kingfisher in Frameworks */,
+				106A3E6F4950A953153F6FA3 /* Pods_MINTA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +89,7 @@
 				147E01D827C125F000EF2792 /* MINTA */,
 				147E01D727C125F000EF2792 /* Products */,
 				8FA96E64B06B395639B7031B /* Pods */,
-				F557EA00B92D5091A26E3113 /* Frameworks */,
+				1C8FDFEECC352981219EE137 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +140,9 @@
 				148700C427C3FF9C0020EFE5 /* CustomCameraView.swift */,
 				148700C627C427300020EFE5 /* HomeView.swift */,
 				148700C827C4273D0020EFE5 /* ProfileView.swift */,
+				47AB939F27DBEFD9004F18F0 /* PokemonImage.swift */,
+				47AB93A127DBF531004F18F0 /* StatView.swift */,
+				47AB93A327DBF781004F18F0 /* StatsViewGroup.swift */,
 				148700CC27C6C2130020EFE5 /* MintView.swift */,
 				1483F67927C7F6F100AC7DD5 /* LoginView.swift */,
 			);
@@ -169,21 +180,21 @@
 			path = Camera;
 			sourceTree = "<group>";
 		};
+		1C8FDFEECC352981219EE137 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40C1FD0BE93025252AB6579C /* Pods_MINTA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FA96E64B06B395639B7031B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DAFA833D3485CA79E90E8497 /* Pods-MINTA.debug.xcconfig */,
-				1284A81514C00D157C49B7BA /* Pods-MINTA.release.xcconfig */,
+				8D1B7B7608C5790A79475BF6 /* Pods-MINTA.debug.xcconfig */,
+				21457B22F0553F2E34052739 /* Pods-MINTA.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		F557EA00B92D5091A26E3113 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				080EC996D1A19D10CB1F6A22 /* Pods_MINTA.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,11 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 147E01E427C125F100EF2792 /* Build configuration list for PBXNativeTarget "MINTA" */;
 			buildPhases = (
-				E1F765A42654D9C9FACDA86B /* [CP] Check Pods Manifest.lock */,
+				D5E122043CF8A7A6BADA618B /* [CP] Check Pods Manifest.lock */,
 				147E01D227C125F000EF2792 /* Sources */,
 				147E01D327C125F000EF2792 /* Frameworks */,
 				147E01D427C125F000EF2792 /* Resources */,
-				767A35760D212BAB65445B5F /* [CP] Embed Pods Frameworks */,
+				3D2A8016E44BDFE9C81E068D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,6 +216,7 @@
 			);
 			name = MINTA;
 			packageProductDependencies = (
+				4790063427DB74F300C99D34 /* Kingfisher */,
 			);
 			productName = MINTA;
 			productReference = 147E01D627C125F000EF2792 /* MINTA.app */;
@@ -237,6 +249,7 @@
 			packageReferences = (
 				1483F67B27C7F7E300AC7DD5 /* XCRemoteSwiftPackageReference "openlogin-swift-sdk" */,
 				4731DDF827D8976E00B67A3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4790063327DB74F200C99D34 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 147E01D727C125F000EF2792 /* Products */;
 			projectDirPath = "";
@@ -262,7 +275,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		767A35760D212BAB65445B5F /* [CP] Embed Pods Frameworks */ = {
+		3D2A8016E44BDFE9C81E068D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,7 +292,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MINTA/Pods-MINTA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E1F765A42654D9C9FACDA86B /* [CP] Check Pods Manifest.lock */ = {
+		D5E122043CF8A7A6BADA618B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,8 +331,11 @@
 				147E01F927C15AB200EF2792 /* CustomTabBarView.swift in Sources */,
 				148700CB27C436BA0020EFE5 /* ProfileHeaderView.swift in Sources */,
 				148700C727C427300020EFE5 /* HomeView.swift in Sources */,
+				47AB93A227DBF531004F18F0 /* StatView.swift in Sources */,
 				1483F67A27C7F6F100AC7DD5 /* LoginView.swift in Sources */,
+				47AB93A027DBEFD9004F18F0 /* PokemonImage.swift in Sources */,
 				147E01DA27C125F000EF2792 /* MINTAApp.swift in Sources */,
+				47AB93A427DBF781004F18F0 /* StatsViewGroup.swift in Sources */,
 				147E01FB27C15AEC00EF2792 /* TabBarItemView.swift in Sources */,
 				147E01F327C158D100EF2792 /* CameraView.swift in Sources */,
 				147E01EF27C1574C00EF2792 /* GlobalHelpers.swift in Sources */,
@@ -449,17 +465,18 @@
 		};
 		147E01E527C125F100EF2792 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAFA833D3485CA79E90E8497 /* Pods-MINTA.debug.xcconfig */;
+			baseConfigurationReference = 8D1B7B7608C5790A79475BF6 /* Pods-MINTA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MINTA/Preview Content\"";
-				DEVELOPMENT_TEAM = F79L8XJ8V6;
+				DEVELOPMENT_TEAM = 68K4S2Y45N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MINTA/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MINTA;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need access to camera to MINT";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -467,13 +484,13 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.minta.minta;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minta.minta2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -483,17 +500,18 @@
 		};
 		147E01E627C125F100EF2792 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1284A81514C00D157C49B7BA /* Pods-MINTA.release.xcconfig */;
+			baseConfigurationReference = 21457B22F0553F2E34052739 /* Pods-MINTA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MINTA/Preview Content\"";
-				DEVELOPMENT_TEAM = F79L8XJ8V6;
+				DEVELOPMENT_TEAM = 68K4S2Y45N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MINTA/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MINTA;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need access to camera to MINT";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -501,13 +519,13 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.minta.minta;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minta.minta2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -555,7 +573,23 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		4790063327DB74F200C99D34 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4790063427DB74F300C99D34 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4790063327DB74F200C99D34 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 147E01CE27C125F000EF2792 /* Project object */;
 }

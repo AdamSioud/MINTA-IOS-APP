@@ -9,7 +9,7 @@ import SwiftUI
 import FirebaseAuth
 
 struct MainView: View {
-    
+
     @StateObject var viewRouter: ViewRouter
     @StateObject var loginController: LoginController
     @State private var capturedImage: UIImage? = nil
