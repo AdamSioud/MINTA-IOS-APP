@@ -27,11 +27,11 @@ struct MainView: View {
         
     var body: some View {
         
-        if Auth.auth().currentUser?.uid != nil {
-            GeometryReader { geometry in
-                ZStack(alignment: .top) {
-                    Color.mintaDarkBlue
-                    
+        /* if Auth.auth().currentUser?.uid != nil {
+          //  GeometryReader { geometry in
+            //    ZStack(alignment: .top) {
+              //      Color.mintaDarkBlue
+                
                     
                     VStack(spacing: 0) {
                         
@@ -52,6 +52,27 @@ struct MainView: View {
         else {
             LoginView(loginController: loginController)
         }
+         */
+        GeometryReader { geometry in
+            ZStack(alignment: .top) {
+                Color.mintaDarkBlue
+                
+                
+                VStack(spacing: 0) {
+                    
+                    getView(loginController: loginController)
+                    
+                    
+                    CustomTabBarView(viewRouter: viewRouter, geometry: geometry)
+                        .background(Color.mintaDarkerBlue)
+                }//: VSTACK
+                
+                
+            }//: ZSTACK
+            .ignoresSafeArea(.all)
+        }//: GEOMETRYREADER
+        .edgesIgnoringSafeArea(.bottom)
+        .navigationBarHidden(true)
     }
 }
 

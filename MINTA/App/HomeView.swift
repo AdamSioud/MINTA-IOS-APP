@@ -11,26 +11,34 @@ import GoogleSignIn
 
 struct HomeView: View {
     
+    @State private var showWenView = false
     @StateObject var loginController: LoginController
+    @State private var showWebView: Bool = false
 
     
     var body: some View {
-        ZStack {
+        
+     
             
-            Color.mintaDarkBlue
+            VStack {
+                Home()
+                Spacer()
+                Button("SIGN OUT") {
+                    GIDSignIn.sharedInstance.signOut()
+                    try? Auth.auth().signOut()
+                    loginController.isLoggedIn = false
+                    print("LOGGED OUT!")
+                    
+                }.padding(.bottom, 8)
+                    
+                    .background(Color(red: 0.4, green: 0, blue: 0.5))
+                    .clipShape(Capsule())
+          
+            }.background(Color.white)
             
-            Button {
-                GIDSignIn.sharedInstance.signOut()
-                try? Auth.auth().signOut()
-                loginController.isLoggedIn = false
-                print("LOGGED OUT!")
-                
-            } label: {
-                Text("LOGG UT")
-            }
-
-        }
-        .edgesIgnoringSafeArea(.all)
+            
+            
+        
     }
 }
 

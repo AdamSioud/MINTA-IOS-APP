@@ -103,99 +103,126 @@ extension Data {
 }
 
 struct ProfileView: View {
-    var pokemonModel = PokemonModel()
-    @State private var pokemon = [Pokemon]()
-    var body: some View {
-        VStack(spacing: 0) {
-         /*   ProfileHeaderView() */
-        NavigationView {
-            List(pokemon) {poke in
-                HStack {
-                    VStack(alignment: .leading, spacing: 5) {
-                        Text(poke.name.capitalized)
-                            .font(.title)
-                        HStack {
-                            Text(poke.type.capitalized)
-                                .italic()
-                            Circle()
-                                .foregroundColor(poke.typeColor)
-                                .frame(width: 10, height: 10)
-                        }
-                        Text(poke.description)
-                            .font(.caption)
-                            .lineLimit(2)
-                    }
-                         
-                    
-                 /*   AsyncImage(url: URL(string:
-                        poke.imageURL)) { phase in
-                        switch phase {
-                        case.empty:
-                            ProgressView()
-                        case.success(let image):
-                            image.resizable()
-                                .interpolation(.none)
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
-                        case.failure:
-                            Image(systemName: "photo")
-                        @unknown default:
-                            EmptyView()
-                        }
-                    } */
-                    
-                    Spacer()
-                    
-                    KFImage(URL(string: poke.imageURL))
-                        .interpolation(.none)
-                        .resizable()
-                        .frame(width: 100, height: 100)
-                }
-            }
-            .navigationTitle("MINTS")
+  
+    
+    @ObservedObject var pokemonVM = PokemonModel()
+    @State private var searchText = ""
+    
+    var filteredPokemon: [Pokemon] {
+        if searchText == "" { return pokemonVM.pokemon }
+        return pokemonVM.pokemon.filter{
+            $0.name.lowercased().contains(searchText.lowercased()) }
         }
+    
+
+    var body: some View {
+
+            
+          
+            
         
-        .onAppear {
-            Task.init {
-                pokemon = try! await pokemonModel.getPokemon()
-            }
-        }
-
-    }
-}
-}
-
-
-/*
-struct ProfileView: View {
-    var body: some View {
-        ZStack(alignment: .top) {
-            
-            Color.black
-            VStack(spacing: 0) {
-              /*  ProfileHeaderView() */
-                ScrollView {
-//                    for n in 1...5 {
-//                        Text("HELLO")
-//                    }
-                    ForEach(1...5, id: \.self) {_ in
-                        MintItemView()
-                            .padding(.horizontal)
-//                            .padding(.bottom)
-                            .padding(.top)
+        NavigationView {
+           
+            List{
+                ForEach(filteredPokemon) {poke in
+                    NavigationLink(destination:
+                        PokemonDetailView(pokemon: poke)) {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 5) {
+                            HStack{
+                            Text(poke.name.capitalized)
+                                .font(.title)
+                            if poke.isFavorite {
+                                Image(systemName:
+                                "star.fill")
+                                    .foregroundColor(.yellow)
+                            }
+                            }
+                            HStack {
+                                Text(poke.type.capitalized)
+                                    .italic()
+                                Circle()
+                                    .foregroundColor(poke.typeColor)
+                                    .frame(width: 10, height: 10)
+                            }
+                            Text(poke.description)
+                                .font(.caption)
+                                .lineLimit(2)
+                        }
+                             
+                 
+                        
+                        Spacer()
+                        
+                        KFImage(URL(string: poke.imageURL))
+                            .interpolation(.none)
+                            .resizable()
+                            .frame(width: 100, height: 100)
                     }
+                        
+                    
+            
                 }
+                .swipeActions(edge: .trailing,
+                    allowsFullSwipe: false) {
+                    Button(action: {
+                        addFavorite(pokemon: poke)}) {
+                        Image(systemName: "star")
+                    }
+                        .tint(.yellow)
+                }
+              }
             }
             
+            .navigationTitle("MINTS")
+            .searchable(text: $searchText)
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar(content: {
+                ToolbarItem(placement: .navigationBarLeading) { Image("picy")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 40, height: 40)
+                .clipShape(Circle())
+                .padding(.horizontal)
+                .shadow(color: Color.mintaLightBlue.opacity(0.5),radius: 10)
+                .overlay(Circle().stroke(Color.white.opacity(0.5), lineWidth: 4))}
             
+            
+            
+            ToolbarItem(placement: .navigationBarLeading) {
+            Text("Saotshi Nakamoto")
+                .font(.system(size: 24, weight: .light, design: .serif))
+                .italic()}
+            }
+            )
+            
+            
+            
+          
+                                    
+
         }
-        .edgesIgnoringSafeArea(.all)
+
+                 
+   
+}
+    func addFavorite(pokemon: Pokemon) {
+        if let index = pokemonVM.pokemon.firstIndex(where: {
+            $0.id == pokemon.id }) {
+            pokemonVM.pokemon[index].isFavorite.toggle()
+        }
     }
-} */
+    
+
+
+
+
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
     }
+}
+
 }
 
