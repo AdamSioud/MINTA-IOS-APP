@@ -15,17 +15,17 @@ struct ProfileHeaderView: View {
             Image("headerBackground")
                 .resizable()
                 .scaledToFill()
-                .frame(height: 150)
+                .frame(height: 80)
                 .clipped()
             
-            VStack(spacing: 35) {
+            VStack(spacing: 5) {
                 Spacer()
                 Spacer()
                 HStack {
                     Image("linkedin_bilde")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 100, height: 100)
+                        .frame(width: 70, height: 70)
                         .clipShape(Circle())
                         .padding(.horizontal)
                         .shadow(color: Color.mintaLightBlue.opacity(0.5),radius: 10)
@@ -35,7 +35,7 @@ struct ProfileHeaderView: View {
                         GroupBox {
                             HStack {
                                 Spacer()
-                                Text("@Lauvraken |")
+                                Text("@Satoshi |")
                                     .foregroundColor(Color.mintaLightGray)
 
                                 
@@ -43,18 +43,18 @@ struct ProfileHeaderView: View {
                                     .foregroundColor(Color.mintaLightBlue)
                                     .fontWeight(.bold)
                                     
-                                Text("NFTs")
+                                Text("MINTS")
                                 
                                 Spacer()
                             }
-                            
-                            .frame(height: 10)
+                            .scaledToFill()
+                            .frame(height: 20)
                             
                         }
                         .opacity(0.9)
                         
                         Spacer()
-                        HStack {
+                    /*    HStack {
                             GroupBox {
                                 HStack {
                                     
@@ -76,12 +76,13 @@ struct ProfileHeaderView: View {
                                 .scaledToFill()
                             }
                         }
+                    }*/
                     }
-                    Spacer()
+                 /*   Spacer()*/
                 }
                 .frame(height: 100)
                 
-//                Spacer()
+          /*     Spacer()
                 HStack {
                     Spacer()
                     
@@ -95,13 +96,14 @@ struct ProfileHeaderView: View {
                 .padding(.bottom)
                 .font(.system(size: 25))
 
-
+                 */
                 
 //                Spacer()
             }
         }
         .shadow(radius: 2)
         .frame(height: 280)
+        .cornerRadius(4)
     }
 }
 
