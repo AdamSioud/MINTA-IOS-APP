@@ -59,7 +59,7 @@ struct CustomCameraView: View {
                         }
                         else {
                             Circle()
-                                .strokeBorder(Color("customLightBlue"), lineWidth: 6)
+                                .strokeBorder(Color.xPurpleDark, lineWidth: 6)
                                 .frame(width: 80, height: 80)
                                 .clipped()
                                 .shadow(radius: 5)

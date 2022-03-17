@@ -13,6 +13,14 @@ extension Color {
     static let mintaGray = Color("customGray")
     static let mintaLightBlue = Color("customLightBlue")
     static let mintaLightGray = Color("customLightGray")
+    static let xGrey = Color("xGrey")
+    static let xPurple = Color("xPurple")
+    static let xPurpleDark = Color("xPurpleDark")
+    static let xWhite = Color("xWhite")
+    static let xSky = Color("xSky")
+    static let xBlue = Color("xBlue")
+    static let xBlueLight = Color("xBlueLight")
+    static let xBlueLightLight = Color("xBlueLightLight")
 }
 
 //class Helpers {

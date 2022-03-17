@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>442299211493-8bcu7e94abf4d7fln0t4qr9dvilj7n7q.apps.googleusercontent.com</string>
+	<string>442299211493-bk7sq0uiv37jvtkt2vie0eo0bp4mfkp2.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.442299211493-8bcu7e94abf4d7fln0t4qr9dvilj7n7q</string>
+	<string>com.googleusercontent.apps.442299211493-bk7sq0uiv37jvtkt2vie0eo0bp4mfkp2</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDETEt_kH80mCAwwOd7ndRltA9FqRhFs7k</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.minta.minta</string>
+	<string>com.minta.mintasa</string>
 	<key>PROJECT_ID</key>
 	<string>minta-647fd</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:442299211493:ios:1b0584a9cfe06f6b32be0c</string>
+	<string>1:442299211493:ios:3fc269e53e1dd4ca32be0c</string>
 </dict>
 </plist>

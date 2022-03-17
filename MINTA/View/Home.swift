@@ -18,17 +18,17 @@ struct Post: Identifiable{
 
 var posts = [
 
-    Post(postImage: "post1",title: "Black Widow",description: "Natasha Romanoff, aka Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises.",starRating: 4),
+    Post(postImage: "post1",title: "Welcome",description: "Welcome to our app, go through the next 5 steps to learn how to use it!",starRating: 1),
     
-    Post(postImage: "post2",title: "Loki",description: "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of Avengers: Endgame",starRating: 5),
+    Post(postImage: "post2",title: "Capture something",description: "Click in the middle of the tab-bar, find something awsome to capture, click the circle.",starRating: 2),
     
-    Post(postImage: "post3",title: "Loki",description: "Living idealized suburban lives, super-powered beings Wanda and Vision begin to suspect that everything is not as it seems",starRating: 4),
+    Post(postImage: "post3",title: "Mint",description: "It easy to mint, just give it a title, and click the button mint.",starRating: 3),
     
-    Post(postImage: "post4",title: "Falcon And the Winter Soldier",description: "Falcon and the Winter Soldier are a mismatched duo who team up for a global adventure that will test their survival skills -- as well as their patience.",starRating: 5),
+    Post(postImage: "post4",title: "Explorer",description: "Go to the solana blockchain explorer and paste your TxID, you should find your NFT.",starRating: 4),
     
-    Post(postImage: "post5",title: "Mulan",description: "A girl disguises as a male warrior and joins the imperial army in order to prevent her sick father from being forced to enlist as he has no male heir.",starRating: 3),
+    Post(postImage: "post5",title: "Our website",description: "Want to know more? Go to our website: minta.world",starRating: 5),
     
-    Post(postImage: "post6",title: "Avengers Endgame",description: "After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.",starRating: 5),
+    Post(postImage: "post6",title: "Follow us",description: "Be sure to check out our twitter and discord and leave a follow and become a member.",starRating: 6),
 ]
 
 struct Home: View {
@@ -78,7 +78,7 @@ struct Home: View {
             .ignoresSafeArea()
             
             // Posts....
-            SnapCarousel(spacing: getRect().height < 750 ? 15 : 20,trailingSpace: getRect().height < 750 ? 100 : 150,index: $currentIndex, items: posts) {post in
+            SnapCarousel(spacing: getRect().height < 850 ? 15 : 20,trailingSpace: getRect().height < 850 ? 100 : 150,index: $currentIndex, items: posts) {post in
                 
                 CardView(post: post)
             }
@@ -112,13 +112,13 @@ struct Home: View {
             
             HStack(spacing: 3){
                 
-                ForEach(1...5,id: \.self){index in
+                ForEach(1...6,id: \.self){index in
                     
-                    Image(systemName: "star.fill")
-                        .foregroundColor(index <= post.starRating ? .yellow : .gray)
+                    Image(systemName: "circle.fill")
+                        .foregroundColor(index <= post.starRating ? .xPurpleDark : .xGrey)
                 }
                 
-                Text("(\(post.starRating).0)")
+                Text("\(post.starRating)")
             }
             .font(.caption)
             

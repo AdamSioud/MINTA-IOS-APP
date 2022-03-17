@@ -23,11 +23,11 @@ struct MintItemView: View {
                         Text("TITLE")
                             .padding(.leading)
                             .font(.system(size: 25, weight: .semibold))
-                            .foregroundColor(.mintaLightGray)
+                            .foregroundColor(.xWhite)
                         Spacer()
                         
                         Image(systemName: "chevron.right")
-                            .foregroundColor(.mintaLightBlue)
+                            .foregroundColor(.xGrey)
                     }
                     HStack {
                         Text("0.5")

@@ -30,7 +30,7 @@ struct TabBarItemView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: width, height: height)
-                        .foregroundColor(viewRouter.currentPage == .camera ? Color.mintaLightBlue :  Color.mintaLightGray)
+                        .foregroundColor(viewRouter.currentPage == .camera ? Color.xPurple :  Color.xPurpleDark)
                         .opacity(viewRouter.currentPage == assignedPage ? 1.0 : 0.3)
                         .padding(.top, 10)
                 }

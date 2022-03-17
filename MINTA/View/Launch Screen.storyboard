@@ -22,43 +22,34 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mintaImage" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-aO-NUc">
-                                <rect key="frame" x="40" y="392.5" width="334" height="111"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MINTA WHITE LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-aO-NUc">
+                                <rect key="frame" x="9" y="262" width="396" height="344"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="g8e-aO-NUc" secondAttribute="height" multiplier="3:1" id="jxG-3d-mCN"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINT A MOMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhN-7P-oyo">
-                                <rect key="frame" x="40" y="503.5" width="334" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.45500001311302185" green="0.87099999189376831" blue="0.92900002002716064" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" name="customDarkBlue"/>
+                        <color key="backgroundColor" name="Color"/>
                         <constraints>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
-                            <constraint firstItem="qhN-7P-oyo" firstAttribute="top" secondItem="g8e-aO-NUc" secondAttribute="bottom" id="FkJ-kf-D3s"/>
                             <constraint firstItem="g8e-aO-NUc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="L2r-DC-H22"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="g8e-aO-NUc" secondAttribute="trailing" constant="40" id="Sds-cR-V91"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="qhN-7P-oyo" secondAttribute="trailing" constant="40" id="dcg-BL-tWp"/>
-                            <constraint firstItem="qhN-7P-oyo" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="40" id="erl-AY-uKy"/>
                             <constraint firstItem="g8e-aO-NUc" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="40" id="hV8-vU-KhQ"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
-        <image name="mintaImage" width="1024" height="1024"/>
-        <namedColor name="customDarkBlue">
-            <color red="0.20784313725490197" green="0.22745098039215686" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="MINTA WHITE LOGO" width="1500" height="1500"/>
+        <namedColor name="Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

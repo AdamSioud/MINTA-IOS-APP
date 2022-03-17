@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Kingfisher
+import FirebaseAuth
+import GoogleSignIn
 
 
 struct Pokemon: Identifiable, Decodable{
@@ -14,13 +16,11 @@ struct Pokemon: Identifiable, Decodable{
     let pokeID = UUID()
     
     var isFavorite = false
-    
     let id: Int
     let name: String
     let imageURL: String
     let type: String
     let description: String
-    
     let attack: Int
     let defense: Int
     let height: Int
@@ -102,7 +102,14 @@ extension Data {
     }
 }
 
+let coloredNavAppearance = UINavigationBarAppearance()
+
+
 struct ProfileView: View {
+    
+   
+    
+    @StateObject var loginController: LoginController
   
     
     @ObservedObject var pokemonVM = PokemonModel()
@@ -114,19 +121,27 @@ struct ProfileView: View {
             $0.name.lowercased().contains(searchText.lowercased()) }
         }
     
+   
+  
 
+    
+   
+        
+    
     var body: some View {
 
-            
+      
           
-            
-        
+       
         NavigationView {
-           
+          
+             
             List{
+
                 ForEach(filteredPokemon) {poke in
                     NavigationLink(destination:
                         PokemonDetailView(pokemon: poke)) {
+                       
                     HStack {
                         VStack(alignment: .leading, spacing: 5) {
                             HStack{
@@ -160,9 +175,7 @@ struct ProfileView: View {
                             .frame(width: 100, height: 100)
                     }
                         
-                    
-            
-                }
+                    }
                 .swipeActions(edge: .trailing,
                     allowsFullSwipe: false) {
                     Button(action: {
@@ -173,44 +186,59 @@ struct ProfileView: View {
                 }
               }
             }
-            
+           
+         
             .navigationTitle("MINTS")
             .searchable(text: $searchText)
             .navigationBarTitleDisplayMode(.large)
             .toolbar(content: {
-                ToolbarItem(placement: .navigationBarLeading) { Image("picy")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 40, height: 40)
-                .clipShape(Circle())
-                .padding(.horizontal)
-                .shadow(color: Color.mintaLightBlue.opacity(0.5),radius: 10)
-                .overlay(Circle().stroke(Color.white.opacity(0.5), lineWidth: 4))}
-            
-            
-            
+          /*
             ToolbarItem(placement: .navigationBarLeading) {
-            Text("Saotshi Nakamoto")
-                .font(.system(size: 24, weight: .light, design: .serif))
-                .italic()}
+                    Image("picy")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 40, height: 40)
+                    .clipShape(Circle())
+                    .padding(.horizontal)
+                    .overlay(Circle().stroke(Color.white.opacity(0.5), lineWidth: 4))
+                    
+                }*/
+            
+         /*   ToolbarItem(placement: .navigationBarTrailing) {
+                     Text("Saotshi Nakamoto")
+                    .font(.system(size: 24, weight: .light, design: .serif))
+                    .italic()} */
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("SIGN OUT") {
+                    GIDSignIn.sharedInstance.signOut()
+                    try? Auth.auth().signOut()
+                    loginController.isLoggedIn = false
+                    print("LOGGED OUT!")
+                    
+                }
+                    .buttonStyle(.bordered)
             }
-            )
             
             
+            }
+               )
+                
+    
+        
             
-          
-                                    
+            
+}.listStyle(PlainListStyle())
+        
+    }
 
-        }
-
-                 
-   
-}
     func addFavorite(pokemon: Pokemon) {
         if let index = pokemonVM.pokemon.firstIndex(where: {
             $0.id == pokemon.id }) {
             pokemonVM.pokemon[index].isFavorite.toggle()
         }
+    
+        
     }
     
 
@@ -220,7 +248,8 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(loginController: LoginController())
+ 
     }
 }
 

@@ -10,11 +10,8 @@ import FirebaseAuth
 import GoogleSignIn
 
 struct HomeView: View {
-    
-    @State private var showWenView = false
     @StateObject var loginController: LoginController
-    @State private var showWebView: Bool = false
-
+    
     
     var body: some View {
         
@@ -22,7 +19,7 @@ struct HomeView: View {
             
             VStack {
                 Home()
-                Spacer()
+               /* Spacer()
                 Button("SIGN OUT") {
                     GIDSignIn.sharedInstance.signOut()
                     try? Auth.auth().signOut()
@@ -35,11 +32,11 @@ struct HomeView: View {
                     .clipShape(Capsule())
           
             }.background(Color.white)
-            
-            
+            */
+            }
             
         
-    }
+            }
 }
 
 struct HomeView_Previews: PreviewProvider {
